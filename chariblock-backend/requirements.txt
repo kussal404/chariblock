@@ -1,0 +1,6 @@
+Django
+djangorestframework
+django-cors-headers
+djangorestframework-simplejwt
+psycopg2-binary  # If using PostgreSQL, otherwise replace with the appropriate database adapter
+# Add any other dependencies as needed for your project
