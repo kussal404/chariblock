@@ -28,13 +28,13 @@ export default function DonorLogin() {
            
           <button
             type="submit"
-            className="bg-yellow-300 text-[#1C1335] font-semibold px-4 py-2 rounded w-full mb-3"
+            className="cursor-pointer hover:scale-105 transition-transform bg-yellow-300 text-[#1C1335] font-semibold px-4 py-2 rounded w-full mb-3"
           >
             Login
           </button>
           <button
             type="button"
-            className="bg-[#D99CA2] text-white font-semibold px-4 py-2 rounded w-full"
+            className="cursor-pointer hover:scale-105 transition-transform bg-[#D99CA2] text-white font-semibold px-4 py-2 rounded w-full"
             onClick={() => window.location.href = '/donor-signup'}
           >
             Signup

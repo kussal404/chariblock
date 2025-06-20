@@ -27,7 +27,7 @@ export default function TopBar() {
   return (
     <div className="bg-[#D99CA2] flex justify-end px-4 py-1 mt-7 rounded-lg relative">
       <button
-        className="bg-yellow-300 text-sm px-4 py-1 rounded flex items-center space-x-1 hover:cursor-pointer"
+        className="bg-yellow-300  hover:scale-110 transition-transform text-sm px-4 py-1 rounded flex items-center space-x-1 hover:cursor-pointer"
         onClick={() => setShowPopup((prev) => !prev)}
       >
         <span>Login</span>
@@ -35,10 +35,10 @@ export default function TopBar() {
       {showPopup && (
         <div
           ref={popupRef}
-          className="absolute right-0 mt-2 bg-white border rounded shadow-lg z-10 w-40"
+          className="absolute  flex-col space-y-4 p-4 right-4 mt-2 bg-white border rounded shadow-lg z-10 w-cursor-pointer hover:scale-105 w-52 h-36 -top-2"
         >
           <button
-            className="block w-full text-left px-4 py-2 hover:bg-yellow-100"
+            className="block cursor-pointer hover:scale-105 rounded-md w-full text-left px-4 py-2 hover:bg-yellow-100"
             onClick={() => {
               setShowPopup(false);
               router.push("/charity-login");
@@ -47,7 +47,7 @@ export default function TopBar() {
             Charity Creator Login
           </button>
           <button
-            className="block w-full text-left px-4 py-2 hover:bg-yellow-100"
+            className="block w-full cursor-pointer rounded-md hover:scale-105  text-left px-4 py-2 hover:bg-yellow-100"
             onClick={() => {
               setShowPopup(false);
               router.push("/donor-login");

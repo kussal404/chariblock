@@ -43,7 +43,7 @@ export default function CharitySignup() {
             </label>
             <button
               type="submit"
-              className="bg-yellow-300 text-[#1C1335] font-semibold px-4 py-2 rounded w-full mb-3"
+              className="bg-yellow-300 cursor-pointer hover:scale-105 text-[#1C1335] font-semibold px-4 py-2 rounded w-full mb-3"
             >
               Signup
             </button>
